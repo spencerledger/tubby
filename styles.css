@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body Styling with Dynamic Background */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  animation: backgroundColourCycle 10s infinite;
+  color: #fff;
+}
+
+/* Background Colour Animation */
+@keyframes backgroundColourCycle {
+  0% { background-color: #ff6f61; }
+  25% { background-color: #f7c948; }
+  50% { background-color: #5cb85c; }
+  75% { background-color: #4285f4; }
+  100% { background-color: #ff6f61; }
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1 {
+  font-size: 3em;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #ddd;
+}
+
+/* Links */
+a {
+  color: #f7c948;
+  text-decoration: none;
+  font-weight: bold;
+  transition: colour 0.3s;
+}
+
+a:hover {
+  color: #ffe680;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  text-decoration: none;
+  color: #000; /* Set text colour to black for contrast */
+  background-color: #f7c948;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #ffe680;
+  transform: translateY(-2px);
+  color: #000; /* Ensure text is black when hovering */
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+
+/* ============================== */
+/* 404 Specific Styles */
+/* ============================== */
+
+/* Error-specific heading styling */
+h1.error {
+  font-size: 6em; /* Large for emphasis */
+  margin: 0;
+  color: #ff6f61; /* Error colour */
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Error-specific paragraph styling */
+p.error {
+  font-size: 1.5em; /* Slightly larger text */
+  margin: 10px 0;
+  color: #eee;
+}
+
+/* Support button styling */
+.button.support {
+  background-color: #ff6f61; /* Error colour */
+}
+
+.button.support:hover {
+  background-color: #e94e4e; /* Darker error colour */
+}
